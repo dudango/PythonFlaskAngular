@@ -41,7 +41,7 @@ export class AppModule {
   constructor() {
     Auth0.configure({
       domain: 'auth234.auth0.com',
-      audience: 'https://auth234.auth0.com/api/v2/',
+      audience: 'http://167.99.55.219/authentication',
       clientID: 'ZqZezKqlnNMEJiJWY23wJdu5nnKvrag4',
       redirectUri: 'http://167.99.55.219:4200/callback',
       scope: 'openid profile manage:exams'
