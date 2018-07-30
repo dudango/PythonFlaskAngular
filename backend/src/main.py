@@ -32,7 +32,6 @@ def get_exams():
 
 
 @app.route('/exams', methods=['POST'])
-@app.route('/exams', methods=['POST'])
 @requires_auth
 def add_exam():
     # mount exam object

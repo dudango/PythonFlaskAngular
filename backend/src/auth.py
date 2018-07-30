@@ -7,7 +7,7 @@ from urllib.request import urlopen
 
 AUTH0_DOMAIN = 'auth234.auth0.com'
 ALGORITHMS = ['RS256']
-API_AUDIENCE = 'http://167.99.55.219/authentication'
+API_AUDIENCE = 'https://auth234.auth0.com/api/v2/'
 
 
 class AuthError(Exception):
