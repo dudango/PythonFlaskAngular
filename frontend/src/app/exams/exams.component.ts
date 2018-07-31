@@ -22,7 +22,7 @@ import {ExamsApiService} from './exams-api.service';
           </p>
           <button mat-raised-button color="accent">Start Exam</button>
           <button mat-button color="warn" *ngIf="isAdmin()"
-                  (click)="delete(exam.id)">
+                  (click)="delete(exam._id)">
             Delete
           </button>
         </mat-card-content>
@@ -67,7 +67,7 @@ export class ExamsComponent implements OnInit, OnDestroy {
               this.examsList = res;
             },
             console.error
-          )
+          );
       }, console.error);
   }
 
