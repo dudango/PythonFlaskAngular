@@ -14,7 +14,6 @@ import {ExamsApiService} from './exams-api.service';
           <mat-card-title>{{exam.title}}</mat-card-title>
           <mat-card-subtitle>{{exam.description}}</mat-card-subtitle>
              {{exam.long_description}}
-          <button mat-raised-button color="accent">Start Exam</button>
           <button mat-button color="warn" *ngIf="isAdmin()"
                   (click)="delete(exam.id)">
             Delete
