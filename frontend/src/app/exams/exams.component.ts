@@ -72,7 +72,7 @@ export class ExamsComponent implements OnInit, OnDestroy {
   }
 
   isAdmin() {
-    if (!Auth0.isAuthenticated()) return false;
+    if (!Auth0.isAuthenticated()) { return false; }
 
     const roles = Auth0.getProfile()['https://online-exams.com/roles'];
     return roles.includes('admin');
