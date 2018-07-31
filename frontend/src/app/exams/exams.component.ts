@@ -21,6 +21,10 @@ import {ExamsApiService} from './exams-api.service';
             molestie non nibh suscipit, faucibus euismod sapien.
           </p>
           <button mat-raised-button color="accent">Start Exam</button>
+          <button mat-button color="warn" *ngIf="isAdmin()"
+                  (click)="delete(exam.id)">
+            Delete
+          </button>
         </mat-card-content>
       </mat-card>
     </div>
@@ -32,25 +36,26 @@ import {ExamsApiService} from './exams-api.service';
   styleUrls: ['exams.component.css'],
 })
 export class ExamsComponent implements OnInit, OnDestroy {
-  examsListSubs: Subscription;
-  examsList: Exam[];
-  authenticated = false;
+  // ... class properties, constructor, and other methods ...
 
-  constructor(private examsApi: ExamsApiService) { }
-
-  ngOnInit() {
-    this.examsListSubs = this.examsApi
-      .getExams()
-      .subscribe(res => {
-          this.examsList = res;
-        },
-        console.error
-      );
-    const self = this;
-    Auth0.subscribe((authenticated) => (self.authenticated = authenticated));
+  delete(examId: number) {
+    this.examsApi
+      .deleteExam(examId)
+      .subscribe(() => {
+        this.examsListSubs = this.examsApi
+          .getExams()
+          .subscribe(res => {
+              this.examsList = res;
+            },
+            console.error
+          )
+      }, console.error);
   }
 
-  ngOnDestroy() {
-    this.examsListSubs.unsubscribe();
+  isAdmin() {
+    if (!Auth0.isAuthenticated()) return false;
+
+    const roles = Auth0.getProfile()['https://online-exams.com/roles'];
+    return roles.includes('admin');
   }
 }
