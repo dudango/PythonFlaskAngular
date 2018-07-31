@@ -3,7 +3,7 @@ export class Exam {
     public title: string,
     public description: string,
     public long_description: string,
-    public _id?: number,
+    public id: number,
     public updatedAt?: Date,
     public createdAt?: Date,
     public lastUpdatedBy?: string,
