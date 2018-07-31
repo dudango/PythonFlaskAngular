@@ -6,16 +6,16 @@ import {Router} from "@angular/router";
   selector: 'exam-form',
   template: `
     <mat-card>
-      <h2>New Exam</h2>
+      <h2>New Ticket</h2>
         <mat-form-field class="full-width">
           <input matInput
-                 placeholder="Title"
+                 placeholder="User"
                  (keyup)="updateTitle($event)">
         </mat-form-field>
 
         <mat-form-field class="full-width">
           <input matInput
-                 placeholder="Description"
+                 placeholder="Short Description"
                  (keyup)="updateDescription($event)">
         </mat-form-field>
 
@@ -29,7 +29,7 @@ import {Router} from "@angular/router";
         <button mat-raised-button
                 color="primary"
                 (click)="saveExam()">
-          Save Exam
+          Save Ticket
         </button>
     </mat-card>
   `,

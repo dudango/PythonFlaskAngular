@@ -7,8 +7,7 @@ import {ExamsApiService} from './exams-api.service';
 @Component({
   selector: 'exams',
   template: `
-    <h2>Exams</h2>
-    <p>Choose an exam and start studying.</p>
+    <h2>Tickets</h2>
     <div class="exams">
       <mat-card class="example-card" *ngFor="let exam of examsList" class="mat-elevation-z5">
         <mat-card-content>
