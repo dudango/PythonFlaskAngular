@@ -36,9 +36,28 @@ import {ExamsApiService} from './exams-api.service';
   styleUrls: ['exams.component.css'],
 })
 export class ExamsComponent implements OnInit, OnDestroy {
-  // ... class properties, constructor, and other methods ...
+  examsListSubs: Subscription;
+  examsList: Exam[];
+  authenticated = false;
 
-  delete(examId: number) {
+  constructor(private examsApi: ExamsApiService) { }
+
+  ngOnInit() {
+    this.examsListSubs = this.examsApi
+      .getExams()
+      .subscribe(res => {
+          this.examsList = res;
+        },
+        console.error
+      );
+    const self = this;
+    Auth0.subscribe((authenticated) => (self.authenticated = authenticated));
+  }
+
+  ngOnDestroy() {
+    this.examsListSubs.unsubscribe();
+  }
+   delete(examId: number) {
     this.examsApi
       .deleteExam(examId)
       .subscribe(() => {
