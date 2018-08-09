@@ -9,7 +9,8 @@ import os
 
 DATABASE_URL = os.environ['DATABASE_URL']
 
-engine = psycopg2.connect(DATABASE_URL)
+conn = psycopg2.connect(DATABASE_URL, sslmode='require')
+engine = psycopg2.connect(DATABASE_URL, sslmode='require')
 # engine = create_engine('postgres://vpasvplweihqcc:c55d15b4c08f459f10e6a7d2ce6bcc1f82b062ba3f1467946c3a43ce58a38d7b@ec2-23-21-166-148.compute-1.amazonaws.com:5432/d24mvkca272k80')
 Session = sessionmaker(bind=engine)
 
