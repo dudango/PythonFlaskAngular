@@ -17,7 +17,7 @@ CORS(app)
 
 
 @app.route('/hello')
-    print('hello')
+print('hello')
 
 @app.route('/exams')
 def get_exams():
