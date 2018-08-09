@@ -12,7 +12,7 @@ jsonify = "*"
 marshmallow = "*"
 alembic = "*"
 gunicorn = "*"
-jose = "*"
+python-jose = "*"
 
 [dev-packages]
 
