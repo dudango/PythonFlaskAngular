@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7993c718-a3c3-44f8-980a-029c27faa243" name="Default Changelist" comment="Customizing for &quot;Tickets&quot;">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Pipfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/Pipfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Pipfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/entities/entity.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/entities/entity.py" afterDir="false" />
+    <list default="true" id="7993c718-a3c3-44f8-980a-029c27faa243" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,16 +13,17 @@
     <session id="265521445">
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="Procfile" value="23" />
           <entry key="procfile" value="7" />
           <entry key="py" value="90" />
           <entry key="ts" value="76" />
-          <entry key="txt" value="191" />
+          <entry key="txt" value="244" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="1" />
-          <entry key="PLAIN_TEXT" value="198" />
+          <entry key="PLAIN_TEXT" value="274" />
           <entry key="Python" value="90" />
           <entry key="TypeScript" value="75" />
         </counts>
@@ -115,10 +113,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/procfile">
+        <entry file="file://$PROJECT_DIR$/Procfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="21" selection-start-column="21" selection-end-column="21" />
+            <state relative-caret-position="15">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -162,6 +160,7 @@
         <option value="$PROJECT_DIR$/frontend/src/app/exams/exams.component.ts" />
         <option value="$PROJECT_DIR$/backend/src/entities/entity.py" />
         <option value="$PROJECT_DIR$/procfile" />
+        <option value="$PROJECT_DIR$/Procfile" />
       </list>
     </option>
   </component>
@@ -187,6 +186,12 @@
               <item name="PythonFlaskAngular" type="b2602c69:ProjectViewProjectNode" />
               <item name="PythonFlaskAngular" type="462c0819:PsiDirectoryNode" />
               <item name="backend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PythonFlaskAngular" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonFlaskAngular" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PythonFlaskAngular" type="b2602c69:ProjectViewProjectNode" />
@@ -292,7 +297,14 @@
       <option name="project" value="LOCAL" />
       <updated>1533058735745</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Customizing for &quot;Tickets&quot;">
+      <created>1533816810519</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1533816810519</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView">
@@ -343,7 +355,8 @@
     <MESSAGE value="Fixing Long_Description in backend" />
     <MESSAGE value="Fixing ID field" />
     <MESSAGE value="Customizing for &quot;Tickets&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Customizing for &quot;Tickets&quot;" />
+    <MESSAGE value="Actually this is setting up the proc file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Actually this is setting up the proc file" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/frontend/src/app/app.component.css">
@@ -475,10 +488,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/procfile">
+    <entry file="file://$PROJECT_DIR$/Procfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="21" selection-start-column="21" selection-end-column="21" />
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
