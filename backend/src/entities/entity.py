@@ -4,13 +4,13 @@ from datetime import datetime
 from sqlalchemy import create_engine, Column, String, Integer, DateTime
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
+import psycopg2
 
-db_url = 'localhost:5432'
-db_name = 'postgres'
-db_user = 'postgres'
-db_password = 'password'
-engine = create_engine('postgresql://postgres:password@localhost:5432/postgres')
-Session = sessionmaker(bind=engine)
+DATABASE_URL = os.environ['DATABASE_URL']
+
+conn = psycopg2.connect(DATABASE_URL, sslmode='require')
+# engine = create_engine('postgres://vpasvplweihqcc:c55d15b4c08f459f10e6a7d2ce6bcc1f82b062ba3f1467946c3a43ce58a38d7b@ec2-23-21-166-148.compute-1.amazonaws.com:5432/d24mvkca272k80')
+Session = sessionmaker(bind=conn)
 
 Base = declarative_base()
 
