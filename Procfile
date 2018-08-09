@@ -1,1 +1,1 @@
-web: gunicorn main:app
+./backend/bootstrap.sh
