@@ -17,8 +17,9 @@ CORS(app)
 
 
 @app.route('/hello')
-def sayhello():
+def say_hello():
     print('hello')
+    return print('this')
 
 
 @app.route('/exams')
