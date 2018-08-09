@@ -4,7 +4,7 @@ from flask import Flask, jsonify, request
 from flask_cors import CORS
 
 
-from .entities.entity import Session, engine, Base
+from entities.entity import Session, engine, Base
 from .entities.exam import Exam, ExamSchema
 from .auth import AuthError, requires_auth, requires_role
 
