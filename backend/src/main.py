@@ -16,6 +16,9 @@ CORS(app)
 # Base.metadata.create_all(engine)
 
 
+@app.route('/hello')
+    print('hello')
+
 @app.route('/exams')
 def get_exams():
     # fetching from the database
