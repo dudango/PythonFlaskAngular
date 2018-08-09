@@ -12,6 +12,7 @@ jsonify = "*"
 marshmallow = "*"
 alembic = "*"
 gunicorn = "*"
+jose = "*"
 
 [dev-packages]
 
