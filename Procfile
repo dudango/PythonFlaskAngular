@@ -1,1 +1,1 @@
-./backend/bootstrap.sh
+web: ./backend/bootstrap.sh
