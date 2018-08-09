@@ -1,1 +1,1 @@
-web: ./backend/bootstrap.sh
+web: gunicorn --pythonpath ./backend/src main:app
