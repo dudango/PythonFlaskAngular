@@ -1,1 +1,1 @@
-export const API_URL = 'http://167.99.55.219:5000';
+export const API_URL = 'https://salty-inlet-66337.herokuapp.com';
