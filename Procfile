@@ -1,3 +1,2 @@
-
-web: cd frontend && ng serve
+web: node /frontend/src/server.js
 server: gunicorn --pythonpath ./backend/src main:app
