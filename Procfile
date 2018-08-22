@@ -1,2 +1,2 @@
 web: node ./frontend/server.js
-server: gunicorn --pythonpath ./backend/src main:app
+web: gunicorn --pythonpath ./backend/src main:app
