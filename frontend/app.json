@@ -1,5 +1,7 @@
 {
   "env": {
-    "API_URL": "mysterious-thicket-51782"
+    "API_URL": {
+      "value": "https://mysterious-thicket-51782.herokuapp.com"
+    }
   }
 }
