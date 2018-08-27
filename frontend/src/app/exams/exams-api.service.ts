@@ -3,7 +3,7 @@ import {Observable} from 'rxjs/Observable';
 import {HttpClient, HttpErrorResponse, HttpHeaders} from '@angular/common/http';
 
 import 'rxjs/add/operator/catch';
-
+import {API_URL} from '../env';
 import {Exam} from './exam.model';
 import * as Auth0 from 'auth0-web';
 
@@ -20,7 +20,7 @@ export class ExamsApiService {
   // GET list of public, future events
   getExams(): Observable<any> {
     return this.http
-      .get(`${process.env.API_URL}/exams`)
+      .get(`${API_URL}/exams`)
       .catch(ExamsApiService._handleError);
   }
 
@@ -31,7 +31,7 @@ export class ExamsApiService {
       })
     };
     return this.http
-      .post(`${process.env.API_URL}/exams`, exam, httpOptions);
+      .post(`${API_URL}/exams`, exam, httpOptions);
   }
    deleteExam(examId: number) {
     const httpOptions = {
@@ -40,7 +40,7 @@ export class ExamsApiService {
       })
     };
     return this.http
-      .delete(`${process.env.API_URL}/exams/${examId}`, httpOptions);
+      .delete(`${API_URL}/exams/${examId}`, httpOptions);
   }
 }
 
