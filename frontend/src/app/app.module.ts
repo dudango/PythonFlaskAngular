@@ -52,7 +52,7 @@ export class AppModule {
       domain: 'auth234.auth0.com',
       audience: 'http://167.99.55.219/authentication',
       clientID: 'ZqZezKqlnNMEJiJWY23wJdu5nnKvrag4',
-      redirectUri: 'https://salty-inlet-66337.herokuapp.com/callback',
+      redirectUri: 'https://damp-sands-71717.herokuapp.com/callback',
       scope: 'openid profile manage:exams'
     });
   }
