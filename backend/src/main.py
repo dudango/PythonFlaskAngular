@@ -13,7 +13,7 @@ app = Flask(__name__)
 CORS(app)
 
 # if needed, generate database schema
-# Base.metadata.create_all(engine)
+Base.metadata.create_all(engine)
 
 
 @app.route('/hello')
