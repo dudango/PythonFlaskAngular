@@ -1,2 +1,2 @@
 
-export const API_URL = "https://mysterious-thicket-51782.herokuapp.com";
+export const API_URL = "${process.env.API_URL}";
