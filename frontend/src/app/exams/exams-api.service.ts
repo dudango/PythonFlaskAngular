@@ -20,7 +20,7 @@ export class ExamsApiService {
   // GET list of public, future events
   getExams(): Observable<any> {
     return this.http
-      .get(`${environment.API_URL}/exams`)
+      .get(`${process.env.API_URL}/exams`)
       .catch(ExamsApiService._handleError);
   }
 
@@ -31,7 +31,7 @@ export class ExamsApiService {
       })
     };
     return this.http
-      .post(`${environment.API_URL}/exams`, exam, httpOptions);
+      .post(`${process.env.API_URL}/exams`, exam, httpOptions);
   }
    deleteExam(examId: number) {
     const httpOptions = {
@@ -40,7 +40,7 @@ export class ExamsApiService {
       })
     };
     return this.http
-      .delete(`${environment.API_URL}/exams/${examId}`, httpOptions);
+      .delete(`${process.env.API_URL}/exams/${examId}`, httpOptions);
   }
 }
 
