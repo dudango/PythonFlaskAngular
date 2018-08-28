@@ -7,6 +7,7 @@ import {ExamsApiService} from './exams/exams-api.service';
 import {ExamFormComponent} from './exams/exam-form.component';
 import {RouterModule, Routes} from '@angular/router';
 import {ExamsComponent} from './exams/exams.component';
+import {environment} from '../environments/environment'
 
 import * as Auth0 from 'auth0-web';
 import {CallbackComponent} from './callback.component';
@@ -52,7 +53,7 @@ export class AppModule {
       domain: 'auth234.auth0.com',
       audience: 'http://167.99.55.219/authentication',
       clientID: 'ZqZezKqlnNMEJiJWY23wJdu5nnKvrag4',
-      redirectUri: 'https://damp-sands-71717.herokuapp.com/callback',
+      redirectUri: environment.baseUrl+'/callback',
       scope: 'openid profile manage:exams'
     });
   }
